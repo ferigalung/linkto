@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+    font-family: 'Inter', sans-serif;
     @apply bg-left bg-no-repeat bg-cover min-h-screen overflow-hidden 
-    bg-[url('./assets/dark-mode/bg-mobile.svg')] 
-    md:bg-[url('./assets/dark-mode/bg-medium.svg')] 
-    lg:bg-[url('./assets/dark-mode/bg-desktop.svg')]
+
+    bg-[url('./assets/light-mode/bg-mobile.svg')] 
+    md:bg-[url('./assets/light-mode/bg-medium.svg')] 
+    lg:bg-[url('./assets/light-mode/bg-desktop.svg')]
+
+    dark:bg-[url('./assets/dark-mode/bg-mobile.svg')] 
+    dark:md:bg-[url('./assets/dark-mode/bg-medium.svg')] 
+    dark:lg:bg-[url('./assets/dark-mode/bg-desktop.svg')]
 }
 
 #root {
@@ -14,7 +21,7 @@ body {
 }
 
 .container {
-    @apply flex items-center flex-col gap-4 min-w-[360px] max-w-2xl px-6 py-14
+    @apply flex items-center flex-col gap-6 min-w-[360px] max-w-2xl px-6 py-14
 }
 
 #profile-pic {

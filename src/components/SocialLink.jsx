@@ -18,7 +18,7 @@ function SocialLink(props) {
     }
   return (
     <a href={props.link} target="_blank">
-        <img src={logoImg} alt={props.media} />
+        <img className='invert dark:invert-0' src={logoImg} alt={props.media} />
     </a>
   )
 }
