@@ -1,12 +1,12 @@
 FROM node:16-alpine
 WORKDIR /app
 
-COPY . /
+COPY . /app
 
 RUN npm install
 RUN npm install -g serve
 RUN npm run build
 
-EXPOSE 8000
+EXPOSE 8001
 
 CMD ["npm", "run", "serve"]
