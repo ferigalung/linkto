@@ -1,0 +1,13 @@
+networks:
+  local:
+    external: true
+
+services:
+  linkto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    networks:
+      - local
