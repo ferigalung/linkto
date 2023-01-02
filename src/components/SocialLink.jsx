@@ -17,7 +17,7 @@ function SocialLink(props) {
         logoImg = LinkedIn
     }
   return (
-    <a href={props.link} target="_blank">
+    <a href={props.link} target="_blank" className='hover:bg-highlight-color-dark-mode transition hover:ease-in-out duration-500 p-2 rounded-full w-14 h-14 flex justify-center items-center'>
         <img className='invert dark:invert-0' src={logoImg} alt={props.media} />
     </a>
   )

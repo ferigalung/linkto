@@ -6,6 +6,7 @@
 body {
     font-family: 'Inter', sans-serif;
     @apply bg-left bg-no-repeat bg-cover min-h-screen overflow-hidden 
+    transition ease-in-out duration-500
 
     bg-[url('./assets/light-mode/bg-mobile.svg')] 
     md:bg-[url('./assets/light-mode/bg-medium.svg')] 

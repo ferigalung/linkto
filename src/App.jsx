@@ -3,7 +3,7 @@ import Button from './components/Button'
 import ProfilePic from './components/ProfilePic'
 import Socials from './components/Socials'
 import Switch from './components/Switch'
-
+import Footer from './components/Footer'
 function App() {
   return (
     <>
@@ -16,6 +16,8 @@ function App() {
         <Button text='Coba 4' link='https://twitter.com' />
 
         <Socials />
+
+        <Footer />
       </div>
     </>
   )
