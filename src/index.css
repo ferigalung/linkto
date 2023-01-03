@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    @apply bg-left bg-no-repeat bg-cover min-h-screen overflow-hidden 
+    @apply bg-left bg-no-repeat bg-cover min-h-screen overflow-y-scroll 
     transition ease-in-out duration-500 text-center
 
     bg-[url('./assets/light-mode/bg-mobile.svg')] 
